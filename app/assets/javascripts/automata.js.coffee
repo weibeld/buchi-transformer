@@ -3,6 +3,15 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+
+  editor_1 = ace.edit("editor-1")
+  editor_2 = ace.edit("editor-2")
+  for editor in [editor_1, editor_2]
+    editor.setTheme("ace/theme/monokai")
+    editor.getSession().setMode("ace/mode/yaml")
+    editor.getSession().setTabSize(2)
+    editor.setShowPrintMargin(false);
+
   $('a[data-send]').click (e) ->
     e.preventDefault()
 
@@ -21,13 +30,13 @@ $ ->
         $.post 'automata/transform',
           algo: $("#transform-selection").val(),
           yaml: editor_1.getValue()
+      when 'clear'
+        editor_1.setValue("")
+        editor_2.setValue("")
+        $("#viz-1").attr("src", "/assets/blank.gif")
+        $("#viz-2").attr("src", "/assets/blank.gif")
+        
 
-  editor_1 = ace.edit("editor-1")
-  editor_2 = ace.edit("editor-2")
-  for editor in [editor_1, editor_2]
-    editor.setTheme("ace/theme/monokai")
-    editor.getSession().setMode("ace/mode/yaml")
-    editor.getSession().setTabSize(2)
-    editor.setShowPrintMargin(false);
+  
   
       
