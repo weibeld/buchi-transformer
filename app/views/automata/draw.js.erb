@@ -1,0 +1,5 @@
+<% if @side == "1" %>
+  $("#viz-1").attr("src", "<%= j(@svg_data_uri) %>")
+<% elsif @side == "2" %>
+  $("#viz-2").attr("src", "<%= j(@svg_data_uri) %>")
+<% end %>

@@ -1,0 +1,60 @@
+<div class="container-non-responsive" >
+
+  <!-- Generate random button -->
+  <div class="row">
+    <div class="col-xs-5 padding-top-down">
+      <a href="#" data-send="random" id="random-button" class="btn btn-primary" style="margin-left: -15px;">Random automaton</a>
+    </div>
+  </div>
+
+  <!-- Editors -->
+  <div class="row">
+    <div class="col-xs-5 editor-container">
+      <div id="editor-1"></div>
+    </div>
+
+    <div class="col-xs-2"></div>
+
+    <div class="col-xs-5 editor-container">
+      <div id="editor-2"></div>
+    </div>
+  </div>
+
+  <!-- Draw buttons -->
+  <div class="row">
+    <div class="col-xs-5 text-center padding-top-down">
+      <a href="#" data-send="draw-1" class="btn btn-primary">Draw</a>
+    </div>
+
+    <div class="col-xs-2"></div>
+
+    <div class="col-xs-5 text-center padding-top-down">
+      <a href="#" data-send="draw-2" class="btn btn-primary">Draw</a>
+    </div>
+  </div>
+
+  <!-- Visualizations (viz) -->
+  <div class="row">
+    <div class="col-xs-5 viz-container" id="viz-container-1">
+      <%= image_tag("blank.gif", id: "viz-1") %>
+      <!-- Expands to <img alt="Blank" id="viz-1" src="/assets/blank.gif" /> -->
+    </div>
+
+    <div class="col-xs-2">
+      <div class="text-center">
+        <select id="transform-selection" name="transform" class="form-control">
+          <option value="subset_construction">Subset Construction</option>
+          <option value="copy">Copy (dummy)</option>
+        </select>
+      </div>
+      <div class="text-center">
+        <a href="#" data-send="transform" class="btn btn-primary">Transform</a>
+      </div>
+    </div>
+
+    <div class="col-xs-5 viz-container" id="viz-container-2">
+      <%= image_tag("blank.gif", id: "viz-2") %>
+    </div>
+  </div>
+
+</div>

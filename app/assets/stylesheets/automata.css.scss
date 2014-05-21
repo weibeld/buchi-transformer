@@ -1,0 +1,56 @@
+// Place all the styles related to the automata controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Make the grid layout of Bootstrap 3.1.1 non-responsive to the screen size by
+// the means of below class instead of .container or .container-fluid, and by
+// using col-xs-* instead of col-sm-*, col-md-*, or col-lg-*.
+.container-non-responsive {
+  /* Margin/padding copied from Bootstrap */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  /* Set width to your desired site width */
+  width: 1200px;
+}
+
+.padding-top-down {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#random-button {
+  margin-right: 0px;
+}
+
+.col-xs-5, .col-xs-2 {
+  //border: 1px solid;
+}
+
+.editor-container {
+  height: 400px;
+}
+
+#editor-1, #editor-2 { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.viz-container {
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.viz-container img {
+  height: 100%;
+  width: 100%;
+}
+
+#transform-selection {
+  margin-bottom: 20px;
+}
