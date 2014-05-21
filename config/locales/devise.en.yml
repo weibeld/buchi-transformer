@@ -23,7 +23,7 @@ en:
       confirmation_instructions:
         subject: "Confirmation instructions"
       reset_password_instructions:
-        subject: "Reset password instructions"
+        subject: "Büchi Transformer Password Reset"
       unlock_instructions:
         subject: "Unlock Instructions"
     omniauth_callbacks:

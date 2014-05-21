@@ -1,19 +1,25 @@
 <%# navigation styled for Bootstrap 3.0 %>
 <nav class="navbar navbar-inverse navbar-top">
+
   <div class="container">
-    <div class="navbar-header">
+
+    <div class="navbar-header pull-left">
+
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
       <%= link_to 'Büchi Transformer', '/', id: 'banner', class: 'navbar-brand' %>
     </div>
+
     <div class="collapse navbar-collapse pull-right">
       <ul class="nav navbar-nav">
         <%= render 'layouts/navigation_links' %>
       </ul>
     </div>
+
   </div>
 </nav>
