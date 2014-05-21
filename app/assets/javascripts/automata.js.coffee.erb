@@ -33,8 +33,8 @@ $ ->
       when 'clear'
         editor_1.setValue("")
         editor_2.setValue("")
-        $("#viz-1").attr("src", "/assets/blank.gif")
-        $("#viz-2").attr("src", "/assets/blank.gif")
+        $("#viz-1").attr("src", "<%= asset_path 'blank.gif' %>")
+        $("#viz-2").attr("src", "<%= asset_path 'blank.gif' %>")
         
 
   
